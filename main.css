@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: Outfit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Card styling */
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Image styling */
+.main_img-box {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+
+  img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* img hover effect */
+
+.main_img-box:hover .img-overlay {
+  display: block;
+  cursor: pointer;
+}
+
+/* Heading styling */
+
+.text-box {
+  margin-top: 1rem;
+
+  .heading-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+  }
+
+  .main_paragraph {
+    font-size: 15px;
+    font-weight: 100;
+    color: #8bacd9;
+    margin-top: 1rem;
+  }
+}
+/* heading hover effect */
+.text-box:hover .heading-text {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/* Cost of eth and time left styling */
+.eth_detail-box {
+  display: flex;
+  gap: 10rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.p-cost {
+  color: aqua;
+  font-size: 12px;
+  position: relative;
+
+  img {
+    max-width: 9px;
+  }
+
+  span {
+    position: absolute;
+    left: 1.2rem;
+    text-wrap: nowrap;
+  }
+}
+.p-time {
+  color: #8bacd9;
+  font-size: 12px;
+  position: relative;
+
+  span {
+    position: absolute;
+    left: 1.5rem;
+    text-wrap: nowrap;
+  }
+}
+
+/* profile styling */
+
+.creator-box {
+  color: hsl(0, 0%, 100%);
+  padding: 25px 0;
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+
+  img {
+    max-width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  p {
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    font-weight: 100;
+    color: #8bacd9;
+
+    strong {
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
+
+/* name hover effect */
+.creator-box:hover .create-name {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
